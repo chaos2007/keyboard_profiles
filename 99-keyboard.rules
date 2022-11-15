@@ -1,0 +1,5 @@
+# Add rules specifically for my keyboards, I want it to be explicit about the vendor/product
+
+# Sofle RGB v2
+ACTION=="add|change", KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="fc32", ATTRS{idProduct}=="1287", RUN{builtin}+="uaccess"
+
